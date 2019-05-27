@@ -10,7 +10,7 @@ before_install:
   - docker build -t anand/learn-docker .
 
 deploy:
-  provider: elasticbeanstack
+  provider: elasticbeanstalk
   region: "us-east-1"
   app: "learn-docker"
   env: "LearnDocker-env"
